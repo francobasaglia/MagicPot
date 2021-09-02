@@ -14,13 +14,13 @@ Arduino library for read values easily from potentiometers.
 
 
 ## Installation
-You can install this library using **Arduino Library Manager**, or downloading the [latest release](https://github.com/francobasaglia/MagicPot/releases) from GitHub repository
+You can install this library using **Arduino Library Manager**, or downloading the [latest release](https://github.com/francobasaglia/MagicPot/releases) from GitHub repository.
 
 
 
 ## Documentation
 ### Include the library on your project
-One the library is installed, include it on any file where you're going to use it
+Once the library is installed, include it on any file where you're going to use it.
 
 ```cpp
 #include <MagicPot.h>
@@ -35,7 +35,7 @@ There is 3 values used as constants on this library:
 #define MAX_RAW_VALUE_DEFAULT           (MAGIC_POT_MAX_RAW_VALUE_10B)
 ```
 
-Too know more about boards resolution works, please visit [Arduino Analog Read Documentation](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/)
+Too know more about boards resolution works, please visit [Arduino Analog Read Documentation](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/).
 
 
 ### Create an instance
@@ -56,7 +56,7 @@ The class constructor could receive up to 4 arguments, that are going to be used
 | pin | `uint8_t` | Potentiometer input pin. |
 | minRead | `uint16_t` | [Optional] Min mapped value. Default is `0`. |
 | maxRead | `uint16_t` | [Optional] Max mapped value. Default is `MAX_RAW_VALUE_DEFAULT`. |
-| maxRawRead | `uint16_t` | [Optional] Reference to max readable value. Default is `MAX_RAW_VALUE_DEFAULT`, and it corresponds to 10 bits resolution boards. You may need to change that, as is shown on [this example]((https://github.com/francobasaglia/MagicPot/blob/main/examples/MapReading_ESP32/MapReading_ESP32.ino)). |
+| maxRawRead | `uint16_t` | [Optional] Reference to max readable value. Default is `MAX_RAW_VALUE_DEFAULT`, and it corresponds to 10 bits resolution boards. You may need to change that, as it is shown on [this example]((https://github.com/francobasaglia/MagicPot/blob/main/examples/MapReading_ESP32/MapReading_ESP32.ino)). |
 
 
 ### Initialize potentiometer
@@ -71,8 +71,8 @@ void setup()
 
 
 ### Update potentiometer value
-You have to update the potentiometer value with the `read` method. It's recommended to do this within the `loop` function.
-The `read` function could receive a `sensitivity` parameter, You may have a noisy potentiometer, in order to prevent inconsistent value updates.
+You have to update the potentiometer value with the `read` method. Is recommended to do this within the `loop` function.
+The `read` method could receive a `sensitivity` parameter, You may have a noisy potentiometer, in order to prevent inconsistent value updates.
 
 ```cpp
 void loop()
@@ -123,7 +123,7 @@ void onPotentiometerChange()
 | emitEvent | `bool` | [Optional] Emit change event when change callback is setted up. Default value is `true`. |
 
 ### Reading potentiometer values
-**MagicPot** retains both raw reads and mapped reads. You can access them using `getValue` and `getRawValue` whenever you need to. Both methods returns a number of type `uint16_t`.
+**MagicPot** retains both raw reads and mapped reads. You can access them using `getValue` and `getRawValue` methods whenever you need to. Both returns a number of type `uint16_t`.
 
 ```cpp
 void loop()
