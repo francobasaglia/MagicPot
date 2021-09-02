@@ -1,0 +1,19 @@
+#######################################
+# Syntax Coloring Map for MagicPot
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+MagicPot    KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin   KEYWORD2
+onChange    KEYWORD2
+read    KEYWORD2
+getValue    KEYWORD2
+getRawValue KEYWORD2
