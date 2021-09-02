@@ -14,3 +14,9 @@ Arduino library for read values easily from potentiometers.
 
 ## Installation
 You can install this library using **Arduino Library Manager**, or downloading the [latest release](https://github.com/francobasaglia/MagicPot/releases) from GitHub repository
+
+## Examples
+[Raw reading](https://github.com/francobasaglia/MagicPot/blob/main/examples/RawReading/RawReading.ino)
+[Map reading](https://github.com/francobasaglia/MagicPot/blob/main/examples/MapReading/MapReading.ino)
+[Map reading (ESP32 / 12 bits boards)](https://github.com/francobasaglia/MagicPot/blob/main/examples/MapReading_ESP32/MapReading_ESP32.ino)
+[Map reading with callback](https://github.com/francobasaglia/MagicPot/blob/main/examples/MapReadingAndCallback/MapReadingAndCallback.ino)
