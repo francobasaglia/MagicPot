@@ -1,15 +1,15 @@
 # MagicPot
 [![License](https://img.shields.io/badge/license-MIT%20License-blue.svg)](http://doge.mit-license.org)
 
-Arduino library for read values easily from potentiometers.
+Arduino library for reading values easily from potentiometers.
 
 
 ## Description
-**MagicPot** is a little Arduino Library for read values easily from potentiometers. It has several configurations in order to:
-* Obtain a mapped *value* on a desire range.
+**MagicPot** is a small Arduino Library for read values easily from potentiometers. It has several configurations in order to:
+* Obtain mapped *value* on a desire range.
 * Work with 10 or 12 bits resolution boards.
-* Define a *callback function* whenever the read from the potentiometer changes.
-* Define a *sensitivity* value at reading time - useful for noisy potentiometers.
+* Define *callback function* whenever the read from the potentiometer changes.
+* Define *sensitivity* value at reading time - useful for noisy potentiometers.
 
 
 
