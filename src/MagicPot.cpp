@@ -5,6 +5,8 @@ void MagicPot::begin()
 	this->onChangeCallback = nullptr;
 	this->value = 0;
 	this->rawValue = 0;
+
+	this->read(0);
 }
 
 void MagicPot::onChange(callback_fn onChangeCallback, bool emitEvent)
