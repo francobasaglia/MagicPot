@@ -1,4 +1,4 @@
-# v1.0.3 (2021-09-06)
+# v1.0.2 (2021-09-10)
 * `read` call added on `begin` method.
 * `CHANGELOG.md` file added.
 
