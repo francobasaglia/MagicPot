@@ -62,7 +62,7 @@ MagicPot potentiometer(POTENTIOMETER_PIN);
 | pin | `uint8_t` | Potentiometer input pin. |
 | minRead | `uint16_t` | [Optional] Min mapped value. Default is `0`. |
 | maxRead | `uint16_t` | [Optional] Max mapped value. Default is `MAX_RAW_VALUE_DEFAULT`. |
-| maxRawRead | `uint16_t` | [Optional] Reference to max readable value. Default is `MAX_RAW_VALUE_DEFAULT`, and it corresponds to 10 bits resolution boards. You may need to change that, as it is shown on [this example]((https://github.com/francobasaglia/MagicPot/blob/main/examples/MapReading_ESP32/MapReading_ESP32.ino)). |
+| maxRawRead | `uint16_t` | [Optional] Reference to max readable value. Default is `MAX_RAW_VALUE_DEFAULT`, and it corresponds to 10 bits resolution boards. You may need to change that, as it is shown on [this example]((../main/examples/MapReading_ESP32/MapReading_ESP32.ino)). |
 
 ### Initialize potentiometer
 You have to initialize the potentiometer with the `begin` method. This usually happen within the `setup` function.
@@ -95,7 +95,7 @@ void loop()
 
 ### Value change callback
 You could set up a function to be executed whenever the potentiometer change.
-The callback function should be setted on `setup` function, as is shown on [this example](https://github.com/francobasaglia/MagicPot/blob/main/examples/MapReadingAndCallback/MapReadingAndCallback.ino).
+The callback function should be setted on `setup` function, as is shown on [this example](../main/examples/MapReadingAndCallback/MapReadingAndCallback.ino).
 The use of change callback is **optional**.
 
 ```cpp
@@ -161,13 +161,13 @@ The library also provides the following constants:
 Too know more about boards resolution works, please visit Arduino [Analog Read Documentation](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/).
 
 ## Examples sketches
-[Raw reading](https://github.com/francobasaglia/MagicPot/blob/main/examples/RawReading/RawReading.ino)
+[Raw reading](../main/examples/RawReading/RawReading.ino)
 
-[Map reading](https://github.com/francobasaglia/MagicPot/blob/main/examples/MapReading/MapReading.ino)
+[Map reading](../main/examples/MapReading/MapReading.ino)
 
-[Map reading (ESP32 / 12 bits boards)](https://github.com/francobasaglia/MagicPot/blob/main/examples/MapReading_ESP32/MapReading_ESP32.ino)
+[Map reading (ESP32 / 12 bits boards)](../main/examples/MapReading_ESP32/MapReading_ESP32.ino)
 
-[Map reading with callback](https://github.com/francobasaglia/MagicPot/blob/main/examples/MapReadingAndCallback/MapReadingAndCallback.ino)
+[Map reading with callback](../main/examples/MapReadingAndCallback/MapReadingAndCallback.ino)
 
 ## License
-[MIT](../LICENSE) © Franco Basaglia
+[MIT](../main/LICENSE) © Franco Basaglia
